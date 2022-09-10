@@ -1,0 +1,168 @@
+from Bucky Roberts
+https://www.youtube.com/watch?v=cEGIFZDyszA&list=PL6gx4Cwl9DGAKWClAD_iKpNC0bGHxGhcx&index=1
+---
+SIMPLE COMMANDS
+----
+$ git --version | *to show the version of git*
+
+$ cd ~  | *to locate root file*
+$ cd ..  | *to go back*
+$ cd 'name of file' | *to open the specific file | e.g. cd.. Desktop*
+
+$ ls  | *to show the list of files*
+$ ls -la  | *to show the list of files with hidden files*
+
+$ pwd | *to show current location*
+$ clear | *clear the entire text of cmd shell*
+$ git help | *to show available commands*
+sample: git help commit
+---
+CONFIG USERNAME AND EMAIL
+---
+$ git config --global user.name "<name>"
+sample: $ git config --global user.name "RYE-513"
+$ git config --global user.email "example@gmail.com"
+sample: $ git config --global user.email "ryan13briz@gmail.com"
+
+$ git config --list | *shows all the contents of username and emails*
+$ git config user.email | *to see recent email*
+---
+GIT INIT
+---
+$ git init | *to add ".git" to a file*
+---
+GIT STAGING
+---
+$ git add . | *to add all the files from repo or changes from the project*
+$ git add "RYE.txt" | *add specific file*
+---
+GIT UNSTAGING
+---
+-- *remove from staging area and go back to working copy*
+
+$ git reset HEAD <file name>
+sample: $ git reset HEAD RYE
+---
+GIT COMMITING
+---
+$ git commit -m "enter mesaage" | *to save the file from repo with message*
+sample: $ git commit -m "First Commit* 
+
+GIT COMMIT -AM
+
+$ git commit -am "Updated/Changed" 
+-- this '-am' careful to use this because it will grab everything the working copy
+---
+SHOW STATUS
+---
+$ git status | *show status*
+-- *red highlight means untracked or not commit*
+-- *green highlight means succesfully add to repo*
+---
+GIT LOG
+---
+$ git log | *to show who is the recent person commit a file*
+$ git log --author=<email or name> | *to show specific person* 
+sample: $ git log --author=RYE / $ git log --author=ryan13briz
+-- *if you type certain name and not registered it will not shown*
+---
+GIT DIFF
+---
+$ git diff  | *show all the old lines that changes*
+-- *red highlight means original of reposiitory*
+-- *green highlight means the new line you changes*
+
+GIT ADD VS GIT DIFF
+
+-- if you already execute git add . you can see the info of git diff
+-- the git diff is to know the differences between your working copy in repository
+
+GIT ADD VS GIT DIFF --STAGED
+
+$ git diff | *meaning compare working copy to repo*
+$ git diff --staged | *meaning compare staging area to repo*
+
+-- git diff | *means compares working tree with staging area*
+-- git diff --staged | *means staged compares staging area with the repository*
+-- git diff HEAD *| means differences between working area and repository*
+---
+HOW TO RENAME A FILE
+---
+METHOD A: GUI FOLDER RENAME
+if the file change in GUI folder *it shows in git status the "red highlight" of recent name*
+
+$ git add <new name of file you manually change in gui folder> 
+sample: $ git add HOME.txt
+
+$ git rm <old name of a file>
+sample: $ git rm HOUSE.txt
+
+$ git status | *it shows the rename history     renamed:    HOUSE.txt -> HOME.txt*
+$ git commit -m "I RENAMED THIS FILE" 
+
+METHOD B: GIT SHELL RENAME
+$ git mv <file> <new name of file>
+sample: $ git mv HOUSE.txt HOME.txt
+
+$ git commit -m "I RENAMED THIS FILE" 
+---
+HOW TO MOVE A FILE
+---
+$ git mv <file> <folder>/<new name>
+sample: $ git mv TAURUS.txt LoveNotes/RYE.txt
+
+$ git status
+$ git commit -m "I MOVED THIS FILE" 
+---
+HOW TO DELETE A FILE
+---
+$ git rm <name file>
+sample: $ git rm RYE*
+---
+SUMMARY
+---
+$ cd Desktop
+$ cd Project
+$ git config name
+$ git config email
+$ git init
+$ git add .
+$ git log
+$ git status
+$ git commit -m "This is very first commit"
+---
+RECOVERY
+---
+$ git status
+$ git checkout -- <file name>
+sample: $ git checkout -- RYE
+-- checkout - take something from repo and make it your working copy
+-- this "--" branches
+$ git status
+---
+GET OLD VERSIONS OF REPO
+---
+FIRST - SECOND - THIRD - SECOND
+*someone ruined at third repo instead to delete it
+go back to a "SECOND" repo*
+
+$ git checkout <git log commit code> -- <name of file>
+sample: $ git checkout 01e7dba -- index.html
+---
+GIT TO GITHUB REPO
+---
+$ git remote add <name> <git url>
+sample: $ git remote add RYE-GIT https://github.com/RYE-513/GIT.git
+
+$ git remote
+
+$ git push -u <name of recent remote> master
+sample: $ git push -u RYE-GIT master
+
+--- *push - adding file to a repo or making changes pushing to a server*
+--- *fetching - get a file from repo or server*
+
+*** the github access will pop-up***
+
+$ git status
+---
