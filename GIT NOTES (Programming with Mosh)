@@ -1,0 +1,23 @@
+from https://www.youtube.com/watch?v=8JJ101D3knE
+
+
+
+A Version Control System "VCS" that changes made to our code over time in a special database called "repository"
+
+repository is centralized with the back end of "Project History" to see who has made what changes when and why.
+and if we screw or made a problem/malfunction on its program we can easily revert to an earlier state
+
+VCS
+- Track History
+- Work together
+
+2 Categories of VCS
+- Centralized  •  all team members or department connected with one database and share their changes with others. "Subversion" and "Microsoft Team"
+Disadvantage: if the server is offline we  cannot save snapshot and we have to wait until the server comes back online.
+- Distribured  • 
+
+
+USING GIT 
+
+ • The command line
+ • Code Editors & IDES
