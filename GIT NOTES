@@ -1,0 +1,155 @@
+___
+VERSION CONTROL SYSTEM VS DISTRIBUTED VCS
+___
+- VERSION CONTROL SYSTEM
+-- have files in single repository working developing on a new file
+-- store all the version system
+-- they would check out the version files
+-- VCS benefits to store multiple version in a single repository
+
+- DISTRIBUTED VERSION CONTROL SYSTEM
+
+-- have the code shared across the team working on a software package
+-- all the developer have entire code on their local system and keep updated all the time
+-- The role of Distributed VCS server to ensure the developer or client has a updated version of the software
+-- each person can share peer-to-peer
+-- changes are being made to server are being redistributed to all development team
+-- Remote Git Repository • people are making update of there codes to local environment
+-- Local Environment • can be update manually and pushed out to the git repository
+-- In repository you're able to pull back the latest update
+and everyone in  a team can have an updated file
+
+- GIT • is a distributed version control tool used for source code management
+-- used to track changes in the source code
+-- allow multiple developers to work together
+-- supports non-linear development because of thousands of parallel branches
+- GITHUB • remote server for that source code management
+___
+- GIT VS GITHUB
+___
+-- GIT
+• software tool
+• installed on a local system
+• manage different versions of the source code
+• provide command line to interact with files
+
+-- GITHUB
+• service
+• hosted on the web
+• have a copy of the local repository code
+• graphical interface to store files
+• you can pull projects from other
+___
+GIT ARCHITECTURE
+___
+Working Directory -> *git add* -> (LOCAL) Staging Area -> *git commit* -> Local Repository -> *git push* -> (REMOTE) Remote Repository "Github" -> *git pull* -> *git checkout*
+
+••• After making all the changes, you commit those files to the local repository
+••• You can push the committed files to the remote repository
+••• Git pull fetches all the changes from a remote repository to a local repository.
+___
+GIT CONCEPT
+___
+- FORK AND CLONE
+Fork - take the project and create a copy associated in a new team
+Clone -- identical same structuring as the main project itself
+download exact copy of that code with the same security and access rights as the main code
+- ADDING COLLABORATORS
+-- you can add people to work on your project
+- BRANCH IN GIT
+-- work on a new branch or features while some developers are on main branch or different branches and later can merge all files on the main branch
+- PULL FROM A REMOTE
+-- get a copy or pull request from a remote repository server
+- GIT REBASE
+-- take a project and re-established a new start from a project
+-- working on a separate branch will not be able to branch their code back into the mainline branch
+___
+GIT FORKS AND CLONE
+___
+-- Fork mean make a separate copy of an original file to your local system
+___ 
+GIT COLLABORATORS
+___
+-- is ability to have team members working on a project together
+-- Type of permissions
+• Access all the files
+• View the files
+• Make changes to files
+• Commit the files
+___
+BRANCHING ON GIT
+___
+e.g.
+                                                   ↑ - - - - (New Branch) - - - - 
+Application (Master Branch) - - - - - - -
+••• By default you always work on the master branch
+
+
+                                               ↑- - - - (New Branch) - - - - - -  ↓
+Application (Master Branch) - - - - - - - connected - - - - - -
+___
+GIT MERGE
+___
+            (d) - - - (e) - - - (f) - - - - -*feature* - - -
+             ↑                                                     ↓
+(a) - - - (b) - - - (c) - - - - - - - - - - - - - - - - - - (g) *master*
+             ↑• base commit of feature branch
+
+••• there can be multiple divergent branches
+___
+GIT REBASE
+___
+••• sequence on combining a commits to a new base commits
+
+(a) - - - (b) - - - (c) - - - - - - - (d) - - - *feature* - - - (e) - - *feature* - - (f)
+                          ↑• "c" current base commit feature
+                              (tip of master)
+
+••• b was changed into c as base commit
+••• rebase advantage is you reducing the amount storage spaces required and reduce total footprint
+
+••• the primary reason for rebasing is "to maintain a linear project history"
+••• when you rebase, you "unplug" a branch and "replug" it on the tip of a master branch and make a new master branch
+••• the goal of rebasing is to take all the commits from a feature branch and put it on a master branch
+___
+PULL FROM REMOTE
+___
+••• they make changes to their codes and submit it to the remote repository
+••• both of them want to stay updated with the recent changes to their repository
+••• they can pull the changes from the remote repository on to their local system
+___
+VERSION CONTROL SYSTEM
+---
+- Track History
+- Work Together
+
+2 TYPES
+- Centralized - all team members can connect and get a latest code to share their witj others
+	e.g.
+	1. Subversion
+	2. Team Foundation Server
+		
+	cons: if the server goes offline we cannot collaborate or save snapshots of our project and wait until the server came back online\
+
+- Distributed - has a copy of their machine so we can save snapshots of our project locally on our machine. 
+	1. Git
+	2. Mercurial
+if server offline we can synchronize directly from others
+---
+WHY GIT?
+---
+- Free
+- Open Source
+- Super Fast
+- Scalable
+- Cheap Branching/Merging 
+---
+WHY COMMAND LINE?
+- GUI tools have limitations
+- GUI tools are not always available
+- faster and easier
+
+SYSTEM - All users
+GLOBAL - All repositories of the current user
+LOCAL - The current repository
+---
