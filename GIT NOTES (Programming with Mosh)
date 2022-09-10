@@ -14,10 +14,28 @@ VCS
 2 Categories of VCS
 - Centralized  •  all team members or department connected with one database and share their changes with others. "Subversion" and "Microsoft Team"
 Disadvantage: if the server is offline we  cannot save snapshot and we have to wait until the server comes back online.
-- Distribured  • 
+- Distribured  • all the members has a copy individual on there local server and we can save snapshots of our project locally. and if offline we can synchronize
+our work with others with the help of Git and Mercurial
 
-
+ 
+WHY GIT?
+ 
+• Free
+• Open Source
+• Super Fast
+• Scalable
+• Cheap Branching/Merging 
+ 
 USING GIT 
 
- • The command line
- • Code Editors & IDES
+• The command line - much  easier
+• Code Editors & IDES - built-in some IDE and you can download the Git plug-in. GitKraken Git Gui is the best
+ 
+WHY COMMAND LINE?
+• GUI tools have limitations
+• GUI tools are not always available
+• faster and easier
+
+SYSTEM - All users
+GLOBAL - All repositories of the current user
+LOCAL - The current repository
