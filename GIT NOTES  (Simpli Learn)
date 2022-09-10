@@ -118,38 +118,4 @@ ___
 ••• both of them want to stay updated with the recent changes to their repository
 ••• they can pull the changes from the remote repository on to their local system
 ___
-VERSION CONTROL SYSTEM
----
-- Track History
-- Work Together
 
-2 TYPES
-- Centralized - all team members can connect and get a latest code to share their witj others
-	e.g.
-	1. Subversion
-	2. Team Foundation Server
-		
-	cons: if the server goes offline we cannot collaborate or save snapshots of our project and wait until the server came back online\
-
-- Distributed - has a copy of their machine so we can save snapshots of our project locally on our machine. 
-	1. Git
-	2. Mercurial
-if server offline we can synchronize directly from others
----
-WHY GIT?
----
-- Free
-- Open Source
-- Super Fast
-- Scalable
-- Cheap Branching/Merging 
----
-WHY COMMAND LINE?
-- GUI tools have limitations
-- GUI tools are not always available
-- faster and easier
-
-SYSTEM - All users
-GLOBAL - All repositories of the current user
-LOCAL - The current repository
----
